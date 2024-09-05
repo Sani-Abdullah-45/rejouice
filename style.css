@@ -1,0 +1,380 @@
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+
+@font-face {
+    font-family: rejoy;
+    src: url(./Rejouice-Headline.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: nb;
+}
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+    position: relative;
+}
+
+.cursor {
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #00000089;
+    color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+.cursor h5 {
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.page1-content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 12;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3vw 3vw;
+}
+
+nav h3 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+nav h4 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+.page1-content h1 {
+    font-family: rejoy;
+    font-size: 27vw;
+    font-weight: 100;
+    line-height: 20vw;
+}
+
+.page1-content h1 span {
+    font-family: rejoy;
+    display: inline-block;
+    color: #faf8f3;
+}
+
+.page2 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 1vw 2.8vw;
+    background-color: #faf8f3;
+
+}
+
+.page2-top {
+    padding-top: 3vw;
+    height: 14vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.page2-top h3 {
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.elem {
+    height: 100%;
+    width: 100%;
+    padding: 1vw 0vw;
+
+    overflow: hidden;
+}
+
+.elem h1 {
+    text-align: left;
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 4.5vw;
+}
+
+.elem .d {
+    text-align: right;
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 4.5vw;
+}
+
+.page3 {
+    min-height: 100vh;
+    background-color: #faf8f3;
+    position: relative;
+    width: 100%;
+    padding: 3vw;
+}
+
+.page3-top {
+    text-align: center;
+}
+
+.page3-top h4 {
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.page3-top h4 span {
+    font-size: 0.65vw;
+    background-color: #000;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 67px;
+}
+
+.page3-top h4 i {
+    font-size: 1vw;
+    padding-left: 0.7vw;
+
+}
+
+.page3-top>h2 {
+    font-size: 3.8vw;
+    font-weight: 500;
+    line-height: 3.7vw;
+}
+
+.page3-elem {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page3-h {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 8vw;
+    justify-content: space-between;
+}
+
+.page3-h h4 {
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+
+.page3-elem .box {
+    height: 100%;
+    width: 32.8%;
+    position: relative;
+}
+
+.page3-elem .box img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease-in 1s;
+}
+
+.page3-elem .box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page3-elem .box:hover img {
+    opacity: 0;
+}
+
+.page4 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 1vw 2.8vw;
+    background-color: #faf8f3;
+
+}
+
+.page4-top {
+    padding-top: 3vw;
+    height: 18vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid black;
+}
+
+.page4-top h3 {
+    font-size: 1.5vw;
+    font-weight: 300;
+    line-height: 1.8vw;
+}
+
+.page5 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #faf8f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page5 video {
+    height: 100%;
+}
+
+.page5 svg {
+    position: absolute;
+    height: 60%;
+
+}
+
+.page6 {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    padding: 1vw 2.8vw;
+    background-color: #faf8f3;
+
+}
+
+.page6-top {
+    padding-top: 3vw;
+    height: 18vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid black;
+}
+
+.page6-top h3 {
+    font-size: 1.5vw;
+    font-weight: 300;
+    line-height: 1.8vw;
+}
+
+.page7 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 1vw 0vw;
+    background-color: #faf8f3;
+}
+
+.page7-top h1 {
+    font-size: 10vw;
+    font-family: rejoy;
+    font-weight: 100;
+    border-bottom: 1px solid black;
+    width: 96%;
+    margin-left: 2%;
+}
+
+.swiper-div {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    margin-top: -5%;
+}
+
+.swiper {
+    width: 130%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 19%;
+    object-fit: cover;
+}
+
+.loder{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    z-index: 65;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 10px;
+}
+.loder h3{
+    font-size: 1.6vw;
+    font-weight: 100;
+}
+.page8{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #907125;
+    position: relative;
+    padding: 3vw;
+}
+.page8-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6vw;
+}
+.page8-top h3{
+    font-weight: 100;
+    font-size: 1.4vw;
+}
+.page8-top h3 i{
+    font-weight: 700;
+}
